@@ -1,2 +1,3 @@
-# ecostamma.github.io
-The official website for the music group Ecostämma.
+# The Offical Ecostämma site
+
+We are a small music group lol
