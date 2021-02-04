@@ -1,5 +1,95 @@
 body {
-    padding:0;
-    margin:0;
-    font-family:Manrope, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: Manrope, sans-serif;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+@media (min-width:960px) {
+    #big-man {
+        background: linear-gradient(305deg, #2a6b36, #72af7e);
+        color: #dde0dd;
+        height: calc(50vh + 12.5vw);
+        width: 100vw;
+        text-align: center;
+        padding-top: calc(50vh - 12.5vw);
+    }
+    #big-man:before {
+        border-radius: inherit;
+        background-image: url(images/ep/at-ep.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: b 1s ease-in-out;
+        animation-fill-mode: forwards;
+        transition: opacity 2.75s ease-in-out;
+    }
+    #big-man img {
+        height: 22.5vw;
+        display: inline-block;
+        animation: slideInFromLeft 1s;
+        animation: a 1s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    #big-man div {
+        animation: a 1s ease-in-out;
+        animation-fill-mode: forwards;
+        font-size: 2vw;
+    }
+    #navbar {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        text-align: end;
+        padding: 0.5vw 2vw 0 0;
+    }
+    #navbar a {
+        display: inline-block;
+        padding-right: 0.5vw;
+        cursor: pointer;
+        color: #dde0dd;
+        transition: color 1s;
+    }
+    #navbar a:hover {
+        color: #ebc9e4;
+    }
+    @keyframes a {
+        from {
+            padding-top: 5vh;
+            opacity: 0;
+            filter: blur(5px);
+        }
+        to {
+            padding-top: 0;
+            opacity: 1;
+            filter: blur(0px);
+        }
+    }
+    @keyframes b {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+}
+
+@media (max-width:960px) {
+    #big-man {
+        background: #378346;
+        color: #dde0dd;
+        height: calc(50vh + 12.5vw);
+        width: 100vw;
+        text-align: center;
+        padding-top: calc(50vh - 12.5vw);
+    }
 }
