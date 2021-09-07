@@ -7,57 +7,62 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
-    <style> 
-       #page-wrap {
-width: 800px;
-text-align: center;
-margin: 0 auto;
-}
-        a {
-  font-size: 40px;
-}
-    </style>
-        <title>Music | Ecostämma</title>
     <style>
-body {
-    background-color: #579562;
-    color: #ffffff;
-}
-</style>
+        body {
+            background-color: #579562;
+            color: #ffffff;
+            padding: 0;
+            margin: 0;
+        }
+        
+        iframe {
+            border: 0;
+            width: 700px;
+            height: 400px;
+        }
+        
+        #releases {
+            display: inline-block;
+            position: absolute;
+        }
+        
+        #releases div {
+            width: 100vw;
+            padding: 1vh 0 3vw 0.5vw;
+        }
+        
+        #releases iframe {
+            position: relative;
+            left: calc(100vw - 700px);
+        }
+        
+        #releases h1 {
+            position: relative;
+        }
+        
+        #at_ep {
+            background-image: url(../images/ep/at-ep.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <title>Music | Ecostämma</title>
 </head>
-  
+
 <body>
-    <div>
-    <center><a>Music</a></center>
+    <div id="navbar">
+        <a id="home-nav" style="text-decoration:none" href="../">Home</a>
+        <a id="aboutus-nav" style="text-decoration:none" href="/about-us">About Us</a>
+        <a id="music-nav" style="text-decoration:none" href="/music">Music</a>
     </div>
-    <div>
-       <center>
-           <p>d410 - The Ocean:</p>
-           <audio controls>
-        <source src="audio/the_ocean.mp3"type="audio/mpeg">
-        Your browser does not support audio. Please use Chrome, Safari, or Firefox.
-           </audio>
-           <p>10x0c - Ortum:</p>
-           <audio controls>
-        <source src="audio/ortum.mp3"type="audio/mpeg">
-           </audio>
-           <p>Subcosmos - Paedt:</p>
-           <audio controls>
-        <source src="audio/paedt.mp3"type="audio/mpeg">
-           </audio>
-           <p>Minimusnoah - Cascade:</p>
-           <audio controls>
-        <source src="audio/cascade.mp3"type="audio/mpeg">
-           </audio>
-           <p>Unresponsive - Immunity:</p>
-           <audio controls>
-        <source src="audio/immunity.mp3"type="audio/mpeg">
-           </audio>
-           <p>Crazexpert - Bright Future:</p>
-           <audio controls>
-        <source src="audio/bright_future.mp3"type="audio/mpeg">
-           </audio>
-           
-        </center>
+    <div id="releases">
+        <div id="at_ep">
+            <div class="bigtext">Our debut EP.</div>
+            <div>Released 12/19/20 <br> "ÄT-EP1" is the first EP by the music group Ecostämma. <br> This EP contains 7 tracks, each made by a member of the Ecostämma team. <br> Cover art by Subcosmos <br><br> [24:51] <br><br> Ecostämma 2020</div>
+            <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1063607429/size=large/bgcol=ffffff/linkcol=2ebd35/artwork=small/transparent=true/" seamless>
+                <a href="https://ecostamma.bandcamp.com/album/t-ep1">ÄT-EP1</a>
+            </iframe>
+        </div>
     </div>
 </body>

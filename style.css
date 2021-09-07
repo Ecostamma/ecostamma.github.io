@@ -44,12 +44,21 @@ body {
         animation-fill-mode: forwards;
         font-size: 2vw;
     }
+    .bigtext {
+        font-size: 3vw;
+    }
     #navbar {
         position: fixed;
         top: 0;
         width: 100vw;
         text-align: end;
-        padding: 0.5vw 2vw 0 0;
+        padding: 0.5vw 2vw 0.5vw 0vw;
+        z-index: 1000;
+        transition: 300ms ease;
+        height: 2.5vh;
+    }
+    #navbar:hover {
+        background: #5eaa6e62;
     }
     #navbar a {
         display: inline-block;
