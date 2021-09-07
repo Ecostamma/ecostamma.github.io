@@ -57,9 +57,6 @@ body {
         transition: 300ms ease;
         height: 2.5vh;
     }
-    #navbar:hover {
-        background: #5eaa6e62;
-    }
     #navbar a {
         display: inline-block;
         padding-right: 0.5vw;
@@ -68,7 +65,7 @@ body {
         transition: color 1s;
     }
     #navbar a:hover {
-        color: #ebc9e4;
+        color: #5eaa6e;
     }
     @keyframes a {
         from {
