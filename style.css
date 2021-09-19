@@ -55,10 +55,12 @@ body {
         padding: 0.5vw 2vw 0.5vw 0vw;
         z-index: 1000;
         transition: 300ms ease;
-        height: 2.5vh;
+        height: 3vh;
+        box-shadow: 0px 2px 10px 0px #3f3f3f62;
     }
     #navbar:hover {
-        background: #5eaa6e62;
+        background: #5eaa6e;
+        box-shadow: 0px 2px 20px 0px #2e2e2e62;
     }
     #navbar a {
         display: inline-block;
@@ -69,6 +71,9 @@ body {
     }
     #navbar a:hover {
         color: #ebc9e4;
+    }
+    .nav-scrolled {
+        background: #5eaa6e62;
     }
     @keyframes a {
         from {
@@ -89,6 +94,30 @@ body {
         to {
             opacity: 0;
         }
+    }
+    #releases {
+        display: inline-block;
+        position: absolute;
+    }
+    #releases div {
+        width: 100vw;
+        padding: 2vh 0 3vw 0.5vw;
+    }
+    #releases iframe {
+        position: absolute;
+        left: calc(100vw - 30vw - 2.5vw);
+        top: 8vh;
+        border: 0;
+        width: 30vw;
+    }
+    #releases h1 {
+        position: relative;
+    }
+    #at_ep {
+        background-image: url(../images/ep/at-ep.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 }
 

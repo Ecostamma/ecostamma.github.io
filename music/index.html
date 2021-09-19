@@ -14,38 +14,6 @@
             padding: 0;
             margin: 0;
         }
-        
-        iframe {
-            border: 0;
-            width: 700px;
-            height: 400px;
-        }
-        
-        #releases {
-            display: inline-block;
-            position: absolute;
-        }
-        
-        #releases div {
-            width: 100vw;
-            padding: 1vh 0 3vw 0.5vw;
-        }
-        
-        #releases iframe {
-            position: relative;
-            left: calc(100vw - 700px);
-        }
-        
-        #releases h1 {
-            position: relative;
-        }
-        
-        #at_ep {
-            background-image: url(../images/ep/at-ep.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
     </style>
     <title>Music | Ecostämma</title>
 </head>
@@ -57,12 +25,24 @@
         <a id="music-nav" style="text-decoration:none" href="/music">Music</a>
     </div>
     <div id="releases">
-        <div id="at_ep">
+        <div id="at_ep"><br>
             <div class="bigtext">Our debut EP.</div>
-            <div>Released 12/19/20 <br> "ÄT-EP1" is the first EP by the music group Ecostämma. <br> This EP contains 7 tracks, each made by a member of the Ecostämma team. <br> Cover art by Subcosmos <br><br> [24:51] <br><br> Ecostämma 2020</div>
+            <div>Released 12/19/20 <br> "ÄT-EP1" is the first EP by the music group Ecostämma. <br> This EP contains 7 tracks, each made by a member of the Ecostämma team. <br> Cover art by Subcosmos <br><br> [24:51]
+                <br><br> Ecostämma 2020</div>
             <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1063607429/size=large/bgcol=ffffff/linkcol=2ebd35/artwork=small/transparent=true/" seamless>
                 <a href="https://ecostamma.bandcamp.com/album/t-ep1">ÄT-EP1</a>
             </iframe>
         </div>
+        <div id=""><br>
+            <div class="bigtext">More releases coming soon!</div>
+        </div>
     </div>
+    <script src="../javascript.js"></script>
+    <script>
+        var iframe = document.querySelector("iframe");
+        window.onload = () => {
+
+            iframe.style.height = "calc(" + iframe.parentElement.clientHeight + "px - 10vh)";
+        }
+    </script>
 </body>
