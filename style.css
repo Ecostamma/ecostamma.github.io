@@ -70,7 +70,7 @@ body {
         transition: color 1s;
     }
     #navbar a:hover {
-        color: #ebc9e4;
+        color: #5eaa6e;
     }
     .nav-scrolled {
         background: #5eaa6e62;
